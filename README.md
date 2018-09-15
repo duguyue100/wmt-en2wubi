@@ -1,6 +1,18 @@
 # wmt-en2wubi
 Code and data for [Character-level Chinese-English Translation through ASCII Encoding](https://arxiv.org/abs/1805.03330)
 
+# Cite the paper
+
+```
+@inproceedings{en2wubi,
+    author = {{Nikolov}, N.~I. and {Hu}, Y. and {Xue Tan}, M. and {Hahnloser}, R.~H.~R.},
+    title = {{Character-level Chinese-English Translation through ASCII Encoding}},
+    booktitle = {Third Conference on Machine Translation (WMT18)},
+    year = {2018},
+    address = {Brussels, Belgium}
+}
+```
+
 
 ## Instructions for reproducing the results
 
