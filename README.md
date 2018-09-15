@@ -4,3 +4,8 @@ Code and data for Character-level Chinese-English Translation through ASCII Enco
 ## Training Data and Results
 
 All the data used to produce the paper and model results are available [here](https://drive.google.com/open?id=12BJ2oKPxO7PBUW6qjJFhQ6447ghwmU9H).
+
+## Convert your data
+
+You can also convert your data from Chinese to Wubi by using the instruction
+in the [en2wubi](./en2wubi) package.
