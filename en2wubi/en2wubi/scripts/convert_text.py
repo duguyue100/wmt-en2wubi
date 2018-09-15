@@ -28,7 +28,8 @@ def convert_doc(input_doc, output_doc, convert_type="ch2wb"):
     """
     # setup input and output document stream
     in_doc = utils.read_doc(os.path.join(e2w.E2W_DATA_PATH, input_doc))
-    out_doc = utils.write_doc(os.path.join(e2w.E2W_DATA_PATH, output_doc))
+    out_doc = utils.write_doc(
+        os.path.join(e2w.E2W_DATA_PATH, output_doc+".tmp"))
 
     if convert_type == "ch2wb":
         ch2wubi_dict = utils.load_ch_wubi_dict(

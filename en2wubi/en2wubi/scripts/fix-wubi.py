@@ -4,8 +4,8 @@ import en2wubi as e2w
 if __name__ == '__main__':
     input_file_name = sys.argv[1]
     input_file_name = os.path.join(
-        e2w.E2W_DATA_PATH, input_file_name)
-    output_file_path = "{}.fix".format(input_file_name)
+        e2w.E2W_DATA_PATH, input_file_name+".tmp")
+    output_file_path = input_file_name[:-4]
     try:
         output_file = open(output_file_path, "w")
     except:
@@ -22,3 +22,5 @@ if __name__ == '__main__':
         line.replace("|\n", "\n")
         output_file.write(line)
     output_file.close()
+
+    os.remove(input_file_name)
