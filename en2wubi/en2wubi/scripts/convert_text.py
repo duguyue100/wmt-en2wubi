@@ -26,17 +26,21 @@ def convert_doc(input_doc, output_doc, convert_type="ch2wb"):
         Chinese to Wubi: ch2wb
         Wubi to Chinese: wb2ch
     """
-    # setup input and output document stream
-    in_doc = utils.read_doc(os.path.join(e2w.E2W_DATA_PATH, input_doc))
-    out_doc = utils.write_doc(
-        os.path.join(e2w.E2W_DATA_PATH, output_doc+".tmp"))
-
     if convert_type == "ch2wb":
+        # setup input and output document stream
+        in_doc = utils.read_doc(os.path.join(e2w.E2W_DATA_PATH, input_doc))
+        out_doc = utils.write_doc(
+            os.path.join(e2w.E2W_DATA_PATH, output_doc+".tmp"))
         ch2wubi_dict = utils.load_ch_wubi_dict(
             os.path.join(e2w.E2W_PACKAGE_DICT_PATH,
                          "chinese_to_wubi_unique.pkl"))
         utils.chinese_wubi(in_doc, out_doc, ch2wubi_dict)
     elif convert_type == "wb2ch":
+        # setup input and output document stream
+        in_doc = utils.read_doc(
+            os.path.join(e2w.E2W_DATA_PATH, input_doc))
+        out_doc = utils.write_doc(
+            os.path.join(e2w.E2W_DATA_PATH, output_doc))
         wubi2ch_dict = utils.load_wubi_ch_dict(
             os.path.join(e2w.E2W_PACKAGE_DICT_PATH,
                          "wubi_to_chinese_unique.pkl"))

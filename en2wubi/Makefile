@@ -17,8 +17,12 @@ run:
 setup:
 	PYTHONPATH=$(PYTHONPATH) python ./en2wubi/__init__.py
 
-convert-text:
-	PYTHONPATH=$(PYTHONPATH) python ./en2wubi/scripts/convert_text.py --input-doc $(IN) --output-doc $(OUT) --convert-type $(TYPE)
+convert-cn2wb:
+	PYTHONPATH=$(PYTHONPATH) python ./en2wubi/scripts/convert_text.py --input-doc $(IN) --output-doc $(OUT) --convert-type ch2wb
 	PYTHONPATH=$(PYTHONPATH) python ./en2wubi/scripts/fix-wubi.py $(OUT)
+
+convert-wb2cn:
+	PYTHONPATH=$(PYTHONPATH) python ./en2wubi/scripts/fix-cn.py $(IN)
+	PYTHONPATH=$(PYTHONPATH) python ./en2wubi/scripts/convert_text.py --input-doc $(IN) --output-doc $(OUT) --convert-type wb2ch
 
 cleanall:

@@ -17,10 +17,11 @@ Translate English to Wubi.
 ## `convert-text`
 
 This tool would help you convert a Chinese given text to Wubi encoding or vice versa.
-All the data is saved in `EN2WUBI_PATH/data`. One example of using this tool is:
+All the data is saved in `EN2WUBI_PATH/data`. To convert the Chinese text to Wubi or the other way around:
 
 ```bash
-make convert-text IN=cn/cn_poem.cn OUT=py/wb_poem.wb TYPE=ch2wb
+make convert-cn2wb IN=cn/cn_text.cn OUT=wb/wb_text.wb  # CN2WB
+make convert-wb2cn IN=wb/wb_text.wb OUT=cn/cn_text.cn  # WB2CN
 ```
 
 The above command will take `cn_poem.cn` file and transform to `wb_poem.wb`
