@@ -2,16 +2,22 @@
 
 Translate English to Wubi.
 
-```bash
-export EN2WUBI_PATH=$HOME/.en2wubi
-```
++ First export the following environment variable
 
-## Tools
+    ```bash
+    export EN2WUBI_PATH=$HOME/.en2wubi
+    ```
 
-### `convert-text`
++ Setup the data structure
+
+    ```bash
+    make setup
+    ```
+
+## `convert-text`
 
 This tool would help you convert a Chinese given text to Wubi encoding or vice versa.
-All the data is saved in `EN2WUBI_PATH/data". One example of using this tool is:
+All the data is saved in `EN2WUBI_PATH/data`. One example of using this tool is:
 
 ```bash
 make convert-text IN=cn/cn_poem.cn OUT=py/wb_poem.wb TYPE=ch2wb
@@ -24,4 +30,4 @@ type for translating a given Wubi document to Chinese text.
 ## Contacts
 
 Yuhuang Hu  
-Email: duguyue100@gmail.com
+Email: yuhuang.hu@ini.uzh.ch

@@ -14,6 +14,9 @@ clean:
 
 run:
 
+setup:
+	PYTHONPATH=$(PYTHONPATH) python ./en2wubi/__init__.py
+
 convert-text:
 	PYTHONPATH=$(PYTHONPATH) python ./en2wubi/scripts/convert_text.py --input-doc $(IN) --output-doc $(OUT) --convert-type $(TYPE)
 	PYTHONPATH=$(PYTHONPATH) python ./en2wubi/scripts/fix-wubi.py $(OUT)
