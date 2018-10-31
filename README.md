@@ -4,12 +4,16 @@ Code and data for [Character-level Chinese-English Translation through ASCII Enc
 # Cite the paper
 
 ```
-@inproceedings{en2wubi,
-    author = {{Nikolov}, N.~I. and {Hu}, Y. and {Xue Tan}, M. and {Hahnloser}, R.~H.~R.},
-    title = {{Character-level Chinese-English Translation through ASCII Encoding}},
-    booktitle = {Third Conference on Machine Translation (WMT18)},
-    year = {2018},
-    address = {Brussels, Belgium}
+@InProceedings{en2wubi,
+  author    = {Nikolov, Nikola  and  Hu, Yuhuang  and  Tan, Mi Xue  and  Hahnloser, Richard H.R.},
+  title     = {Character-level Chinese-English Translation through ASCII Encoding},
+  booktitle = {Proceedings of the Third Conference on Machine Translation},
+  month     = {October},
+  year      = {2018},
+  address   = {Belgium, Brussels},
+  publisher = {Association for Computational Linguistics},
+  pages     = {10--16},
+  url       = {http://www.aclweb.org/anthology/W18-64002}
 }
 ```
 
